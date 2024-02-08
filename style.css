@@ -279,14 +279,14 @@ main hr{
 }
 
 
-.contact-me:hover{
+/* .contact-me:hover{
     display:flex;
     height: 404px;
     width: 102%;
     justify-content: center;
     align-items: center;
     
-}
+} */
 
 .contact-info{
     display: flex;
@@ -322,9 +322,48 @@ main hr{
     justify-content: center;
 }
 
+button:hover {
+    animation: wiggle 2s linear infinite;
+  }
+  
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+  body {
+    background: #000;
+  }
+  
 
 
 
+
+  /* Add styles for dark mode */
+.dark-mode {
+    background-color: #1a1a1a; /* Dark background color */
+    color: #fff; /* White text color */
+}
 
 
 
